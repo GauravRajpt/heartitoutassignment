@@ -1,0 +1,104 @@
+/* styles.css */
+
+.shadow-header {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.section1-heading {
+    color: #01818C;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+.form-container {
+    margin-left: 180px;
+    padding-top: 30px;
+}
+
+.form-h3 {
+    color: var(--3-dark, #455A64);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20.375px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+
+.radio-label {
+    color: var(--3-dark, #455A64);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16.3px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #01818C; /* Inside color when checked */
+     /* Border color when checked */
+}
+.custom-radio .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+    background-color: #01818C; /* Inside color when active */
+     /* Border color when active */
+}
+.custom-radio .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: none;
+}
+.dropdown-btn{
+    border-radius: 9.169px;
+    border: 1.019px solid #C6C6C6;
+    background-color: transparent;
+ color: #01818C;
+font-family: Roboto;
+font-size: 16.3px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+height: 42.5px;
+}
+.dropdown-btn::after{
+    color:black
+}
+.submitbtn{
+
+
+box-shadow: 0px 2.0374531745910645px 3.0561792850494385px 0px rgba(0, 0, 0, 0.15);
+color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 16.3px;
+font-style: normal;
+font-weight: 700;
+line-height: 18.337px; /* 112.5% */
+}
+
+/* second section */
+.secondsectionn{
+    border-radius: 6px;
+background: #F4FBFF;
+height: 65px;
+}
+.box{
+    background: #F7FBFD;
+    height: 505px;
+    width: 277.558px;
+height: 286px;
+flex-shrink: 0;
+border-radius: 10px;
+border: 1px solid #2B7397;
+}
