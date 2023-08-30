@@ -122,11 +122,11 @@
       <div class="secondsectionn col col-md-8 mx-auto d-flex justify-content-between align-items-center my-5">
         <h3 class="form-h3">Lorem ipsum dolor sit amet</h3>
         
-            <img src="./helper/vector1.png" alt="vector1"/>
+            <img class="vector1" src="./helper/vector1.png" alt="vector1"/>
         </div>
         
       </div>
-      <div class="box container-fluid d-flex justify-content-around align-items-center">
+      <div id="box" class="box container-fluid    ">
        <div class="parent">
         <h3 class="boxtopheading">Lorem Ipsum</h3>
         <div class="boxes d-flex flex-column justify-content-around">
@@ -174,12 +174,12 @@
       <div class="secondsectionn col col-md-8 mx-auto d-flex justify-content-between align-items-center my-5">
         <h3 class="form-h3">Lorem ipsum dolor sit amet</h3>
         
-            <img src="./helper/vector1.png" alt="vector1"/>
+            <img src="./helper/vector2.png" alt="vector1"/>
         </div>
         <div class="secondsectionn col col-md-8 mx-auto d-flex justify-content-between align-items-center my-5">
             <h3 class="form-h3">Lorem ipsum dolor sit amet</h3>
             
-                <img src="./helper/vector1.png" alt="vector1"/>
+                <img src="./helper/vector2.png" alt="vector1"/>
             </div>
             
     
@@ -192,7 +192,21 @@
         });
 
         $('input[type="radio"]:checked').change();
+
+       
       });
+
+     $('.vector1').click(function(){
+      $(
+    '.box'
+      ).toggle();
+      if($(this).attr('src')=='./helper/vector1.png'){
+      $(this).attr('src','./helper/vector2.png');
+      }
+      else{
+        $(this).attr('src','./helper/vector1.png');
+      }
+     })
     </script>
   </body>
 </html>

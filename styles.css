@@ -95,8 +95,11 @@ height: 65px;
 }
 .box{
     background: #F7FBFD;
-    height: 505px;
-    
+    display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: row;
+    flex-wrap: wrap;
 
 }
 .boxes{
@@ -104,6 +107,7 @@ height: 65px;
 border: 1px solid #2B7397;
 height: 299px;
 width: 277px;
+
 
 }
 .boxes>h2{
@@ -157,4 +161,14 @@ line-height: 25px; /* 156.25% */
 border-radius: 0px 0px 10px 10px;
 background: #2B7397;
 border:none;
+}
+
+@media (max-width:800px) {
+    .box{
+        flex-direction: column;
+        
+    }
+    .boxes{
+        margin-bottom: 30px;
+    }
 }
